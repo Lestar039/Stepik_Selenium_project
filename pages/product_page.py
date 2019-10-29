@@ -5,7 +5,7 @@ from .locators import BasketButtonLocators
 class ProductPage(BasePage):
 
     def should_be_product_page(self):
-        self.should_be_product_link()
+        # self.should_be_product_link()
         self.should_be_basket_button()
         self.should_be_correct_product_name()
         self.should_be_correct_price()
@@ -14,8 +14,8 @@ class ProductPage(BasePage):
         basket_button = self.browser.find_element(*BasketButtonLocators.BASKET_BUTTON)
         basket_button.click()
 
-    def should_be_product_link(self):
-        assert "?promo=newYear" in self.browser.current_url, "'?promo=newYear' is not presented"
+    # def should_be_product_link(self):
+    #     assert "?promo=newYear" in self.browser.current_url, "'?promo=newYear' is not presented"
 
     def should_be_basket_button(self):
         assert self.is_element_present(*BasketButtonLocators.BASKET_BUTTON), "Basket button is not presented"
