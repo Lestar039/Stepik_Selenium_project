@@ -2,7 +2,7 @@ from selenium.common.exceptions import NoSuchElementException, NoAlertPresentExc
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from .locators import BasePageLocators
+from .locators import BasePageLocators, BasketInHead
 
 import math
 
@@ -63,3 +63,14 @@ class BasePage:
             return False
 
         return True
+
+
+class ToBasketPage:
+    def __init__(self, browser, url, timeout=10):
+        self.browser = browser
+        self.url = url
+        self.browser.implicitly_wait(timeout)
+
+    def should_go_to_basket_in_head(self):
+        link = self.browser.find_element(*BasketInHead.BASKET_LINK)
+        link.click()
