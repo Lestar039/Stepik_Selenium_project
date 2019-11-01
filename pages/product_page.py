@@ -6,7 +6,6 @@ from .locators import ProductPageLocators
 class ProductPage(BasePage):
 
     def should_be_product_page(self):
-        # self.should_be_product_link()
         self.should_be_basket_button()
         self.should_be_correct_product_name()
         self.should_be_correct_price()
@@ -15,9 +14,6 @@ class ProductPage(BasePage):
     def should_be_add_product_to_basket(self):
         basket_button = self.browser.find_element(*BasketButtonLocators.BASKET_BUTTON)
         basket_button.click()
-
-    # def should_be_product_link(self):
-    #     assert "?promo=newYear" in self.browser.current_url, "'?promo=newYear' is not presented"
 
     # Проверка наличия кпонки "Положить в корзину"
     def should_be_basket_button(self):

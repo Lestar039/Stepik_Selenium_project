@@ -4,7 +4,6 @@ from .locators import BasketInHead
 
 class BasketPage(BasePage):
     def should_be_basket_page(self):
-        # self.should_be_product()
         self.should_be_empty_basket()
         self.should_be_empty_basket_text()
 
