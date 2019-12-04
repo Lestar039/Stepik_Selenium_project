@@ -1,7 +1,8 @@
 # Stepik_Selenium_project
 
 #Page Object Pattern
-Набор тестов для сайта selenium1py.pythonanywhere.com.
+
+Набор тестов для сайта http://selenium1py.pythonanywhere.com/ru/.
 
 Как установить
 Скачиваем файлы и переходим в папку. 
