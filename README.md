@@ -26,4 +26,4 @@ pytest -v --tb=line --language=en
 
 
 Цель проекта
-Итоговый проект для курса на stepik.org
+Итоговый проект для курса на https://stepik.org/
