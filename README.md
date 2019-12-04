@@ -21,8 +21,9 @@ pip install -r requirements.txt
 После настройки скрипт запускаем из корневой папки.
 
 pytest -v --tb=line --language=en -m need_review
+
 pytest -v --tb=line --language=en
 
 
 Цель проекта
-Код написан в образовательных целях для stepik.org
+Итоговый проект для курса на stepik.org
