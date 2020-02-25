@@ -18,7 +18,7 @@ pip install -r requirements.txt
 
 Использование.
 
-После настройки скрипт запускаем из корневой папки.
+После настройки скрипта запускаем из корневой папки.
 
 pytest -v --tb=line --language=en -m need_review
 
